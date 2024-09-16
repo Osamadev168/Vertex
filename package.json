@@ -1,0 +1,52 @@
+{
+  "name": "vertex",
+  "type": "commonjs",
+  "productName": "Vertex",
+  "version": "1.0.0",
+  "description": "Vertex Document Analyzer",
+  "main": "src/index.js",
+  "build": {
+    "extraResources": ["./extraResources/**"]
+},
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "win32"
+          ]
+        }
+      ],
+      "publishers": []
+    }
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "31.3.1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Osama Habib",
+    "email": "84494988+Osamadev168@users.noreply.github.com"
+  },
+  
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}

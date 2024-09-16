@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vertex</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Vertex</h1>
+    <div>
+      <label for="folderInput">Select PDF Folder</label>
+      <input type="file" webkitdirectory  id="folderInput"/>
+    </div>
+    <div>
+      <p id="ollamaVersion"></p>
+    </div>
+    <div>
+      <input type="text" id="query" placeholder="Enter your query here" style="width: 800px"/>
+    </div>
+    <button id="search">Generate Response</button>
+    <p style="display: none;" id="indicator">Generating response......!</p>
+    <div style="width: 100%; height: auto; border: 1px dashed rgb(112, 112, 114); margin: 5px; overflow-wrap: break-word; overflow: auto;">
+      <p id="output" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></p>
+    </div>
+  </body>
+  <script src="renderer.js"></script>
+</html>
